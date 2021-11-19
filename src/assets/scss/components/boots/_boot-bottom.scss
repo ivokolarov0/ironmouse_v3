@@ -1,0 +1,58 @@
+.boot-bottom {
+  position: absolute;
+  bottom: 0;
+  left: 3.7em;
+  width: 18.7em;
+  height: 5.3em;
+  transform: rotate(-2deg);
+  overflow: hidden;
+  z-index: 1;
+}
+
+.boot-bottom__inner {
+  position: absolute;
+  bottom: 0em;
+  left: 42%;
+  width: 44em;
+  height: 26.6em;
+  border-bottom: 0.4em solid #000;
+  border-radius: 50%;
+  transform: rotate(0deg) translateX(-50%);
+  overflow: hidden;
+}
+
+.boot-bottom__left {
+  position: absolute;
+  left: 13.9em;
+  bottom: -9em;
+  width: 21em;
+  height: 24.3em;
+  border-radius: 50%;
+  border-left: 0.4em solid #000;
+  transform: rotate(-3deg);
+  overflow: hidden;
+}
+
+.boot-bottom__right {
+  position: absolute;
+  right: 1.9em;
+  bottom: 1em;
+  width: 21em;
+  height: 24.3em;
+  border-radius: 50%;
+  border-right: 0.4em solid #000;
+  transform: rotate(3deg);
+  overflow: hidden;
+}
+
+.boot-bottom__top {
+  position: absolute;
+  bottom: 11.7em;
+  left: 58%;
+  width: 72.4em;
+  height: 63.3em;
+  border-radius: 50%;
+  transform: translate(-50%) rotate(-3deg);
+  border-bottom: 0.4em solid #000;
+  box-shadow: 0 10em 0 1em #fff;
+}

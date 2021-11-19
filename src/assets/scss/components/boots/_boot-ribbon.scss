@@ -1,0 +1,121 @@
+.boot-ribbon {
+  position: absolute;
+  right: 16.8em;
+  bottom: 33.9em;
+  width: 20.4em;
+  height: 28.6em;
+  overflow: hidden;
+}
+
+.boot-ribbon1 {
+  position: absolute;
+  right: 0;
+  top: 0;
+  width: 13.1em;
+  height: 22.8em;
+
+  &--first {
+    top: 4.1em;
+    left: 3em;
+    transform: rotate(-23deg);
+  }
+
+  &--second {
+    z-index: 2;
+  }
+}
+
+.boot-ribbon1__patches {
+  position: absolute;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+
+  span {
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 12.3em;
+      left: 3.9em;
+      width: 4em;
+      height: 8em;
+      background-color: var(--ribbon-pink);
+      border-radius: 50%;
+      transform: rotate(-19deg);
+    }
+  }
+}
+
+.boot-ribbon1__top {
+  position: absolute;
+  right: 0.5em;
+  top: -3.7em;
+  width: 20.2em;
+  height: 30.6em;
+  border-radius: 50%;
+  transform: rotate(35deg);
+  overflow: hidden;
+}
+
+.boot-ribbon1__top1 {
+  position: absolute;
+  right: 1.7em;
+  top: 0.2em;
+  width: 11.3em;
+  height: 23.5em;
+  border-radius: 50%;
+  transform: rotate(-57deg);
+  overflow: hidden;
+
+  span {
+    position: absolute;
+    left: 0.8em;
+    top: 0em;
+    width: 8.3em;
+    height: 29.4em;
+    transform: rotate(-5deg);
+    background-color: var(--ribbon-pink);
+    border-radius: 50%;
+    border-left: 0.2em solid rgba(#000, 0.7);
+    border-top: 0.2em solid rgba(#000, 0.7);
+    box-shadow: inset 0.6em 1.7em 0 -1em rgb(#000, 0.7),
+      inset -1.1em -2.8em 0 -1em rgb(#000, 0.2);
+  }
+}
+
+.boot-ribbon1__bottom {
+  position: absolute;
+  width: 5.2em;
+  height: 14.5em;
+  top: 8.4em;
+  right: 3.6em;
+  transform: rotate(12deg);
+  border-radius: 50%;
+  background-color: var(--ribbon-pink);
+  border-left: 0.2em solid rgba(#000, 0.7);
+  border-bottom: 0.2em solid rgba(#000, 0.7);
+}
+
+.boot-ribbon1__center {
+  position: absolute;
+  top: 15em;
+  left: 3.1em;
+  width: 3.6em;
+  height: 2.3em;
+  background-color: var(--ribbon-pink);
+  border-radius: 50%;
+  border: 0.2em solid rgba(#000, 0.7);
+}
+
+.boot-ribbon1__base {
+  position: absolute;
+  right: 0.4em;
+  top: 10.3em;
+  width: 3.5em;
+  height: 5.6em;
+  background-color: var(--ribbon-pink);
+  border-radius: 50%;
+  transform: rotate(-33deg);
+  border: 0.2em solid rgba(#000, 0.7);
+}

@@ -1,0 +1,62 @@
+.sock-purple__cross {
+  position: absolute;
+  width: 8.3em;
+  height: 11.8em;
+
+  span {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 2.1em;
+    height: 12.5em;
+    background-color: #fff;
+    border: 0.2em solid var(--sock-croos-border);
+    border-radius: 0.7em;
+
+    &:nth-child(1) {
+      transform: translate(-50%, -50%) rotate(31deg);
+      z-index: 1;
+      box-shadow: 0.2em 0 0 0.1em rgba(#000, 0.2);
+    }
+
+    &:nth-child(2) {
+      transform: translate(-50%, -50%) rotate(-27deg);
+      box-shadow: -0.2em 0 0 0.1em rgba(#000, 0.2);
+    }
+  }
+
+  &:nth-child(1) {
+    left: -20.4em;
+    top: 50em;
+  }
+
+  &:nth-child(2) {
+    left: -20.9em;
+    top: 62em;
+
+    span {
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(28deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(-29deg);
+      }
+    }
+  }
+
+  &:nth-child(3) {
+    left: -19.9em;
+    top: 74.4em;
+
+    span {
+      &:nth-child(1) {
+        transform: translate(-50%, -50%) rotate(24deg);
+      }
+
+      &:nth-child(2) {
+        transform: translate(-50%, -50%) rotate(-36deg);
+      }
+    }
+  }
+}

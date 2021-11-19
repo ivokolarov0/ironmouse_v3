@@ -1,0 +1,12 @@
+@import './general/variables';
+@import './general/base';
+@import './general/reset';
+
+@import './components/boots/index';
+@import './components/legs/index';
+
+.ironmouse {
+  font-size: 10px;
+  max-width: 650px;
+  margin: 0 auto;
+}

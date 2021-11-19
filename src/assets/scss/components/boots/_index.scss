@@ -1,0 +1,33 @@
+@import './boot-bottom';
+@import './boot-front';
+@import './boot-back';
+@import './boot-ties';
+@import './boot-top';
+@import './boot-ribbon';
+@import './ribbon-bell';
+
+.ironmouse__boots {
+  position: relative;
+  width: 53.5em;
+  height: 50.5em;
+  margin: 0 auto;
+}
+
+.boot {
+  position: absolute;
+  top: 0;
+  width: 23.3em;
+  height: 50.2em;
+
+  &:nth-child(1) {
+    left: 0;
+  }
+
+  &:nth-child(2) {
+    right: 0;
+  }
+
+  &.reverse {
+    transform: rotateY(180deg);
+  }
+}
