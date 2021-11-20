@@ -5,6 +5,17 @@
   width: 30em;
   height: 175.9em;
 
+  &:after {
+    content: '';
+    position: absolute;
+    top: 22em;
+    left: -0.1em;
+    width: 10em;
+    height: 25em;
+    background-color: var(--skin-color);
+    transform: rotate(-7.2deg);
+  }
+
   &.is-right {
     left: auto;
     right: 0;
@@ -18,6 +29,7 @@
     width: 25.8em;
     height: 93em;
     overflow: hidden;
+    z-index: 1;
 
     .leg__inner {
       position: absolute;
@@ -42,12 +54,12 @@
 
   .leg__top {
     position: absolute;
-    left: 1em;
-    top: 22em;
-    width: 27.3em;
+    left: 0.6em;
+    top: 21.5em;
+    width: 27.9em;
     height: 62em;
     overflow: hidden;
-    transform: rotate(4deg);
+    transform: rotate(3.8deg);
 
     .leg__top-inner {
       position: absolute;
@@ -58,45 +70,5 @@
       transform: rotate(-12.3deg);
       background-color: var(--skin-color);
     }
-  }
-}
-
-.sock-purple {
-  position: absolute;
-  top: 41em;
-  right: 92%;
-  width: 23.6em;
-  height: 44%;
-  overflow: hidden;
-
-  .sock-purple__inner {
-    position: absolute;
-    left: 21.7em;
-    top: -45em;
-    width: 27.9em;
-    height: 179.5em;
-    border-radius: 50%;
-    box-shadow: -24em 0 0 8em var(--sock-purple);
-  }
-}
-
-.sock-purple__top {
-  position: absolute;
-  top: 35.3em;
-  left: -19.2em;
-  width: 21.4em;
-  height: 10.2em;
-  overflow: hidden;
-  transform: rotate(4deg);
-
-  .sock-purple__top-inner {
-    position: absolute;
-    top: -20em;
-    left: 50%;
-    width: 33.4em;
-    height: 30.2em;
-    border-radius: 50%;
-    transform: translateX(-50%);
-    border-bottom: 7em solid #000;
   }
 }

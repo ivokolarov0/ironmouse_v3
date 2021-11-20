@@ -1,0 +1,20 @@
+.sock-purple__top {
+  position: absolute;
+  top: 35.3em;
+  left: -19.2em;
+  width: 21.6em;
+  height: 10.2em;
+  overflow: hidden;
+  transform: rotate(4deg);
+
+  .sock-purple__top-inner {
+    position: absolute;
+    top: -20em;
+    left: 50%;
+    width: 33.4em;
+    height: 30.2em;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    border-bottom: 7em solid var(--sock-border-color);
+  }
+}

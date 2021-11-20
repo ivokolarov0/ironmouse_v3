@@ -1,0 +1,44 @@
+.sock-pink__top-patch {
+  position: absolute;
+  top: 63.7em;
+  left: 41.2em;
+  width: 13.1em;
+  height: 23.6em;
+  transform: rotate(-6deg);
+  overflow: hidden;
+
+  .sock-pink__top-patch-t {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 35.1em;
+    height: 24em;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  .sock-pink__top-patch-l {
+    position: absolute;
+    left: 13em;
+    top: -39.1em;
+    width: 18.2em;
+    height: 71.36em;
+    border-radius: 50%;
+    overflow: hidden;
+    border-left: 0.2em solid var(--sock-patch-border);
+  }
+
+  .sock-pink__top-patch-r {
+    position: absolute;
+    left: -3.4em;
+    top: 12em;
+    width: 11.2em;
+    height: 70.3em;
+    border-radius: 50%;
+    background-color: var(--sock-patch);
+    transform: rotate(15deg);
+    overflow: hidden;
+    border-right: 0.2em solid var(--sock-patch-border);
+  }
+}

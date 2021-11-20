@@ -1,0 +1,50 @@
+.sock-pink__top-lines-inner {
+  position: absolute;
+  width: 12.8em;
+  height: 7.3em;
+
+  &:nth-child(1) {
+    top: 0;
+  }
+
+  &:nth-child(2) {
+    left: -0.9em;
+    top: 9.6em;
+    transform: scale(0.6);
+
+    span {
+      &:nth-child(1) {
+        transform: rotate(-17deg);
+      }
+
+      &:nth-child(2) {
+        transform: rotate(29deg);
+      }
+    }
+  }
+
+  span {
+    position: absolute;
+    left: 0;
+    width: 12.7em;
+    height: 2.1em;
+    transform-origin: center center;
+    background-color: var(--sock-patch-line);
+    border-radius: 0.4em;
+    border: 0.2em solid var(--sock-patch-line-border);
+
+    &:nth-child(1) {
+      left: 1em;
+      top: 4em;
+      transform: rotate(-25deg);
+      z-index: 2;
+      box-shadow: 0.2em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+    }
+
+    &:nth-child(2) {
+      top: 4em;
+      transform: rotate(21deg);
+      box-shadow: -0.2em 0.2em 0.2em rgba(0, 0, 0, 0.5);
+    }
+  }
+}

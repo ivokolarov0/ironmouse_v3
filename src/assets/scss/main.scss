@@ -4,9 +4,16 @@
 
 @import './components/boots/index';
 @import './components/legs/index';
+@import './components/sock-purple/index';
+@import './components/sock-pink/index';
 
 .ironmouse {
   font-size: 10px;
   max-width: 650px;
   margin: 0 auto;
+}
+
+body {
+  max-width: 100%;
+  overflow-x: hidden;
 }

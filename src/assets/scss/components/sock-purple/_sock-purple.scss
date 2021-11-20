@@ -1,0 +1,18 @@
+.sock-purple {
+  position: absolute;
+  top: 41em;
+  right: 92%;
+  width: 23.6em;
+  height: 44%;
+  overflow: hidden;
+
+  .sock-purple__inner {
+    position: absolute;
+    left: 21.7em;
+    top: -45em;
+    width: 27.9em;
+    height: 179.5em;
+    border-radius: 50%;
+    box-shadow: -24em 0 0 8em var(--sock-purple);
+  }
+}
