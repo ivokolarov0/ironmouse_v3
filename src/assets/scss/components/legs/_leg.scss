@@ -14,6 +14,7 @@
     height: 25em;
     background-color: var(--skin-color);
     transform: rotate(-7.2deg);
+    border-left: 0.2em solid var(--leg-border);
   }
 
   &.is-right {
@@ -39,16 +40,18 @@
       height: 214.1em;
       border-radius: 50%;
       overflow: hidden;
+      border-left: 0.2em solid var(--leg-border);
     }
 
     .leg__side {
       position: absolute;
-      left: 20.9em;
+      left: 20.4em;
       top: 42em;
-      width: 27.9em;
+      width: 26.5em;
       height: 179.5em;
       border-radius: 50%;
       box-shadow: -24em 0 0 8em var(--skin-color);
+      border: 0.2em solid var(--leg-border);
     }
   }
 
@@ -56,10 +59,11 @@
     position: absolute;
     left: 0.6em;
     top: 21.5em;
-    width: 27.9em;
+    width: 27.5em;
     height: 62em;
     overflow: hidden;
     transform: rotate(3.8deg);
+    border-right: 0.2em solid var(--leg-border);
 
     .leg__top-inner {
       position: absolute;
@@ -69,6 +73,7 @@
       height: 69.8em;
       transform: rotate(-12.3deg);
       background-color: var(--skin-color);
+      border-left: 0.2em solid var(--leg-border);
     }
   }
 }

@@ -1,0 +1,149 @@
+.leg-straps {
+  position: absolute;
+  top: 55.5em;
+  left: 1.7em;
+  width: 26em;
+  height: 23.33em;
+  z-index: 1;
+}
+
+.leg-straps__cirlce {
+  position: absolute;
+  top: 5.8em;
+  left: 48%;
+  width: 9.6em;
+  height: 9.6em;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  background-color: var(--strap-leg-color);
+  border: 0.2em solid var(--strap-leg-border);
+
+  .leg-straps__cirlce-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 6.3em;
+    height: 6.6em;
+    transform: translate(-50%, -50%);
+    background-color: var(--skin-color);
+    border-radius: 50%;
+    border: 0.2em solid var(--strap-leg-border);
+  }
+}
+
+.leg-straps-line {
+  position: absolute;
+  width: 0.7em;
+  transform-origin: 0 0;
+  border-radius: 0.4em;
+  background-color: var(--stap-leg-line);
+  z-index: 3;
+
+  &--top {
+    height: 13em;
+    top: 0.5em;
+    left: 0.7em;
+    transform: rotate(-49deg);
+  }
+
+  &--bottom {
+    height: 14.5em;
+    top: 12.8em;
+    left: 14.2em;
+    transform: rotate(-45deg);
+  }
+}
+
+.leg-straps__overlay {
+  position: absolute;
+  top: 7.3em;
+  left: 9.5em;
+  width: 5.8em;
+  height: 5.7em;
+  overflow: hidden;
+  transform: rotate(-13deg);
+  z-index: 1;
+
+  &:after {
+    content: '';
+    position: absolute;
+    width: 5.2em;
+    height: 6.6em;
+    border-radius: 50%;
+    background-color: var(--skin-color);
+    border: 0.2em solid var(--sock-patch-line-border);
+    box-shadow: inset 0.4em 0.4em 0.4em rgba(0, 0, 0, 0.3);
+  }
+}
+
+.leg-straps__belt {
+  position: absolute;
+  height: 5.4em;
+  transform: rotate(-15deg);
+  overflow: hidden;
+
+  .leg-straps__belt-inner {
+    position: absolute;
+    top: -2.3em;
+    right: 1em;
+    width: 100%;
+    height: 170%;
+    transform: rotate(19deg);
+    overflow: hidden;
+    border-right: 0.2em solid var(--leg-border);
+  }
+
+  .legs-straps__belt-item {
+    position: absolute;
+    top: 1.8em;
+    left: 1.2em;
+    width: 100%;
+    height: 60%;
+    background-color: var(--stap-leg-leather);
+    transform: rotate(-19deg);
+    border-top: 1.2em solid var(--stap-leg-line);
+    border-bottom: 1.2em solid var(--stap-leg-line);
+    box-shadow: inset -0.4em 0 1em rgba(0, 0, 0, 0.3);
+
+    .leg-straps__belt-hole {
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      width: 1.1em;
+      height: 1em;
+      transform: translate(-50%, -50%);
+      background-color: var(--skin-color);
+      border: 0.2em solid var(--sock-patch-line-border);
+      border-radius: 50%;
+    }
+  }
+
+  &--left {
+    top: 9.3em;
+    left: 2em;
+    width: 8.7em;
+
+    .leg-straps__belt-inner {
+      transform: rotate(5deg);
+      border-right: 0;
+      right: -0.9em;
+
+      .legs-straps__belt-item {
+        top: 2.4em;
+        left: -0.8em;
+        transform: rotate(-5deg);
+        box-shadow: inset 0.4em 0 1em rgba(0, 0, 0, 0.3);
+
+        .leg-straps__belt-hole {
+          left: 48%;
+        }
+      }
+    }
+  }
+
+  &--right {
+    top: 5.9em;
+    left: 14em;
+    width: 12.7em;
+  }
+}
