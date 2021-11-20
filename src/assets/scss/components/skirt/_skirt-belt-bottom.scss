@@ -1,0 +1,74 @@
+.skirt-belt-bottom {
+  position: absolute;
+  top: 6em;
+  left: 50%;
+  transform: translateX(-50%);
+  width: 40.8em;
+  height: 9.4em;
+  overflow: hidden;
+  z-index: 11;
+}
+
+.skirt-belt-bottom__inner {
+  position: absolute;
+  bottom: 1.5em;
+  left: 50%;
+  width: 148.2em;
+  height: 58.6em;
+  border-radius: 50%;
+  border-bottom: 7.5em solid var(--skirt);
+  transform: translateX(-50%);
+}
+
+.skirt-belt-buckle {
+  position: absolute;
+  top: 0;
+  left: 51.5%;
+  transform: translateX(-50%);
+  width: 9.5em;
+  height: 8.4em;
+
+  .skirt-belt-buckle__left {
+    position: absolute;
+    border-radius: 1em;
+    width: 1.1em;
+    height: 100%;
+    background-color: #fff;
+    box-shadow: 0 0 0.2em 0.2em rgba(#000, 0.2);
+  }
+
+  .skirt-belt-buckle__right {
+    position: absolute;
+    right: 0;
+    top: 0;
+    width: 4.1em;
+    height: 100%;
+    border-top: 0.4em solid #fff;
+    border-bottom: 0.4em solid #fff;
+    border-right: 0.8em solid #fff;
+    box-shadow: 0.4em 0 0.2em 0 rgba(#000, 0.2);
+  }
+}
+
+.skirt-belt-buckle__pin {
+  position: absolute;
+  top: 42%;
+  left: 60%;
+  width: 1.1em;
+  height: 1.2em;
+  border-radius: 50%;
+  background-color: var(--belt-hole);
+
+  span {
+    position: absolute;
+    left: 1em;
+    top: 50%;
+    width: 2.2em;
+    height: 0.5em;
+    transform: translateY(-50%);
+    background-color: #fff;
+    box-shadow: 0 0 0.2em 0.2em rgba(#000, 0.2);
+    border-radius: 0 0.5em 0.5em 0;
+    border: 0.1em solid var(--belt-hole-border);
+  }
+}

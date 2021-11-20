@@ -1,0 +1,26 @@
+.heart {
+  position: relative;
+  width: 9.5em;
+  height: 8.8em;
+  transform: rotate(-5deg);
+}
+
+.heart__half {
+  position: absolute;
+  top: 1em;
+  width: 3.9em;
+  height: 6.7em;
+  border-radius: 3em 3em 0 0;
+  background-color: var(--heart);
+
+  &:nth-child(1) {
+    left: 1.6em;
+    transform: rotate(-37deg);
+  }
+
+  &:nth-child(2) {
+    top: 1.2em;
+    right: 2em;
+    transform: rotate(55deg);
+  }
+}
