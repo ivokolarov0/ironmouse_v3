@@ -1,43 +1,64 @@
 <template>
   <div class="ironmouse__skirt">
-    <div class="skirt-belt-top">
-      <heart />
-      <div class="skirt-belt-top__inner"></div>
-    </div>
-    <div class="skirt-belt-bottom">
-      <div class="skirt-belt-bottom__inner"></div>
-      <div class="skirt-belt-buckle">
-        <div class="skirt-belt-buckle__left"></div>
-        <div class="skirt-belt-buckle__right"></div>
-        <div class="skirt-belt-buckle__pin">
-          <span></span>
-        </div>
-      </div>
+    <skirt-under />
+    <skirt-belt-top />
+    <skirt-belt-bottom />
+    <div class="skirt-crosses skirt-crosses--top">
+      <skirt-cross />
+      <skirt-cross class="purple" />
     </div>
     <div class="skirt-lines">
-      <div class="skirt-line">
-        <div class="skirt-line__holder">
-          <div class="skirt-line__inner"></div>
+      <skirt-line>
+        <div class="skirt-line__inner">
+          <div class="skirt-line__hole"></div>
         </div>
-      </div>
-      <div class="skirt-line">
-        <div class="skirt-line__holder">
-          <div class="skirt-line__inner"></div>
+      </skirt-line>
+      <skirt-line color="pink">
+        <div class="skirt-line__inner"></div>
+      </skirt-line>
+      <skirt-line>
+        <div class="skirt-line__inner"></div>
+      </skirt-line>
+      <skirt-line color="pink">
+        <div class="skirt-line__inner">
+          <div class="skirt-line__hole"></div>
         </div>
-      </div>
-      <div class="skirt-line">
-        <div class="skirt-line__holder">
-          <div class="skirt-line__inner"></div>
+      </skirt-line>
+      <skirt-line>
+        <div class="skirt-line__inner"></div>
+      </skirt-line>
+      <skirt-line>
+        <div class="skirt-line__inner"></div>
+      </skirt-line>
+      <skirt-line>
+        <div class="skirt-crosses">
+          <skirt-cross />
+          <skirt-cross class="purple" />
         </div>
-      </div>
+        <div class="skirt-line__transparent">
+          <div class="skirt-line__transparent-left">
+            <div class="skirt-line__transparent-right"></div>
+          </div>
+        </div>
+      </skirt-line>
     </div>
   </div>
 </template>
 
 <script>
-import heart from '../../assets/scss/components/heart/heart.vue';
+import SkirtBeltBottom from './skirt-belt-bottom.vue';
+import SkirtBeltTop from './skirt-belt-top.vue';
+import SkirtCross from './skirt-cross.vue';
+import SkirtLine from './skirt-line.vue';
+import SkirtUnder from './skirt-under.vue';
 
 export default {
-  components: { heart },
+  components: {
+    SkirtCross,
+    SkirtLine,
+    SkirtUnder,
+    SkirtBeltTop,
+    SkirtBeltBottom,
+  },
 };
 </script>

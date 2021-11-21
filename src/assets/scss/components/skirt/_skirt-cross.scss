@@ -1,0 +1,39 @@
+.skirt-cross {
+  position: absolute;
+  width: 8.4em;
+  height: 7.8em;
+  transform: rotate(-13deg);
+
+  &.purple {
+    span {
+      background-color: var(--cross-purple);
+    }
+  }
+
+  span {
+    position: absolute;
+    width: 9.5em;
+    height: 1.5em;
+    background-color: var(--cross-pink);
+    border: 0.1em solid var(--skirt-border);
+
+    &:nth-child(1) {
+      top: -0.3em;
+      left: 1.7em;
+      transform-origin: 0 0;
+      transform: rotate(47deg);
+      border-radius: 0.4em;
+      z-index: 1;
+      box-shadow: -0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
+    }
+
+    &:nth-child(2) {
+      top: -0.3em;
+      right: 1.7em;
+      transform-origin: right 0;
+      transform: rotate(-43deg);
+      border-radius: 0.4em;
+      box-shadow: 0.2em 0.3em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+}

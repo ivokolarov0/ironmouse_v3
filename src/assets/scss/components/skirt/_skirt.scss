@@ -5,3 +5,40 @@
   margin: 0 auto -40em;
   z-index: 2;
 }
+
+.skirt-crosses--top {
+  .skirt-cross {
+    &:nth-child(1) {
+      top: 34.6em;
+      left: 28.6em;
+      z-index: 12;
+      transform: rotate(9deg) scale(1.6);
+
+      span {
+        &:nth-child(1) {
+          top: -0.1em;
+          left: 1.1em;
+          transform: rotate(43deg);
+          transform: rotate(43deg);
+        }
+
+        &:nth-child(2) {
+          z-index: 1;
+        }
+      }
+    }
+
+    &:nth-child(2) {
+      top: 20.3em;
+      left: 30.7em;
+      z-index: 11;
+      transform: rotate(5deg) scale(1.5);
+
+      span {
+        &:nth-child(2) {
+          z-index: 1;
+        }
+      }
+    }
+  }
+}

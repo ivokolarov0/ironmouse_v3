@@ -1,0 +1,27 @@
+.skirt-line__heart {
+  position: absolute;
+  bottom: 0.9em;
+  right: 0.5em;
+  z-index: 2;
+  transform: scale(0.5) rotate(-4deg);
+
+  .heart {
+    .heart__half {
+      background-color: #fff;
+    }
+
+    &:nth-child(1) {
+      margin-bottom: -4em;
+      transform: scale(0.25);
+    }
+
+    &:nth-child(2) {
+      margin-bottom: -3em;
+      transform: scale(0.5) rotate(-4deg);
+    }
+
+    &:nth-child(3) {
+      transform: scale(0.8);
+    }
+  }
+}

@@ -1,0 +1,33 @@
+.skirt-line__stripe {
+  position: absolute;
+  bottom: 3.6em;
+  left: 0;
+  width: 17.3em;
+  height: 2.9em;
+  overflow: hidden;
+  z-index: 2;
+  transform: rotate(-2deg);
+
+  &:after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 50%;
+    width: 44.2em;
+    height: 17.7em;
+    transform: translateX(-50%);
+    border-radius: 50%;
+  }
+
+  &.purple {
+    &::after {
+      border-bottom: 1.5em solid var(--skirt-stripe-purple);
+    }
+  }
+
+  &.pink {
+    &::after {
+      border-bottom: 1.5em solid var(--skirt-stripe-pink);
+    }
+  }
+}

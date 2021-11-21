@@ -1,0 +1,40 @@
+.skirt-under {
+  position: absolute;
+  left: 50%;
+  top: 12em;
+  transform: translateX(-50%);
+  width: 81.6em;
+  height: 60.6em;
+  overflow: hidden;
+
+  .skirt-under__left {
+    position: absolute;
+    left: 5em;
+    top: 1em;
+    width: 89.7em;
+    height: 84.6em;
+    transform: rotate(28deg);
+    overflow: hidden;
+  }
+
+  .skirt-under__right {
+    position: absolute;
+    right: 28em;
+    top: 1em;
+    width: 79.7em;
+    height: 84.6em;
+    transform: rotate(36deg);
+    overflow: hidden;
+  }
+
+  .skirt-under__inner {
+    position: absolute;
+    left: 42%;
+    bottom: 19em;
+    width: 113.1em;
+    height: 81em;
+    border-radius: 50%;
+    background-color: var(--skirt-under);
+    transform: translateX(-50%) rotate(-64deg);
+  }
+}
