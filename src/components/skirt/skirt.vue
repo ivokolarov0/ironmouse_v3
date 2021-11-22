@@ -1,6 +1,14 @@
 <template>
   <div class="ironmouse__skirt">
     <skirt-under />
+    <div class="skirt-side-strap">
+      <div class="skirt-side-strap__inner"></div>
+      <div class="skirt-side-strap__circle">
+        <div class="skirt-side-strap__circle-pin"></div>
+        <!-- /.skirt-side-strap__circle-inner -->
+      </div>
+      <heart />
+    </div>
     <skirt-belt-top />
     <skirt-belt-bottom />
     <div class="stocking-stap">
@@ -51,6 +59,7 @@
 </template>
 
 <script>
+import Heart from '../heart/heart.vue';
 import SkirtBeltBottom from './skirt-belt-bottom.vue';
 import SkirtBeltTop from './skirt-belt-top.vue';
 import SkirtCross from './skirt-cross.vue';
@@ -64,6 +73,7 @@ export default {
     SkirtUnder,
     SkirtBeltTop,
     SkirtBeltBottom,
+    Heart,
   },
 };
 </script>

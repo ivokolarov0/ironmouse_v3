@@ -1,0 +1,64 @@
+.skirt-side-strap {
+  position: absolute;
+  top: 68em;
+  right: 8.6em;
+  width: 4.6em;
+  height: 41.1em;
+  z-index: -1;
+
+  .skirt-side-strap__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    bottom: 0;
+    right: 0;
+    background-color: var(--skirt-side-strap);
+    z-index: 1;
+    border-radius: 10%;
+    border: 0.2em solid var(--skirt-side-strap-border);
+  }
+
+  .skirt-side-strap__circle {
+    position: absolute;
+    top: 94%;
+    left: 58%;
+    transform: translateX(-50%);
+    width: 9.9em;
+    height: 10.2em;
+    border: 1.1em solid var(--skirt-side-strap-circle-bg);
+    border-radius: 50%;
+    box-shadow: 0 0 0 0.2em var(--skirt-side-strap-circle-border),
+      inset 0 0 0 0.1em var(--skirt-side-strap-circle-border);
+  }
+
+  .skirt-side-strap__circle-pin {
+    position: absolute;
+    top: 7.4em;
+    left: 52%;
+    width: 0.3em;
+    height: 2.3em;
+    box-shadow: 0 0 0 0.05em var(--skirt-side-strap-circle-border);
+    background-color: var(--skirt-side-strap-circle-bg);
+    border-radius: 20%;
+    transform: translateX(-50%);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 110%;
+      left: 50%;
+      transform: translateX(-50%);
+      border-radius: 50%;
+      width: 0.4em;
+      height: 0.4em;
+      box-shadow: 0 0 0 0.05em var(--skirt-side-strap-circle-border);
+    }
+  }
+
+  .heart {
+    position: absolute;
+    top: 100%;
+    left: -40%;
+    transform: translateY(6.7em) rotate(-7deg);
+  }
+}
