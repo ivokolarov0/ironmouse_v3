@@ -5,7 +5,6 @@
       <div class="skirt-side-strap__inner"></div>
       <div class="skirt-side-strap__circle">
         <div class="skirt-side-strap__circle-pin"></div>
-        <!-- /.skirt-side-strap__circle-inner -->
       </div>
       <heart />
     </div>

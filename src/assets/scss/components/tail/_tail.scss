@@ -1,0 +1,55 @@
+.tail {
+  position: absolute;
+  top: 25em;
+  right: -28.6em;
+  width: 92.3em;
+  height: 123.9em;
+  overflow: hidden;
+
+  .tail-circle {
+    position: absolute;
+    right: 0;
+    bottom: 2em;
+    width: 147.3em;
+    height: 141.9em;
+    border-radius: 50%;
+    border-right: 0.2em solid var(--tail-border);
+    transform: rotate(50deg);
+    overflow: hidden;
+  }
+
+  .tail__inner {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    right: 1.5em;
+    bottom: -1.5em;
+    width: 162.3em;
+    height: 143.9em;
+    border-radius: 50%;
+    border-right: 0.2em solid var(--tail-border);
+    box-shadow: 0 0 0 5em var(--tail-bg);
+  }
+
+  .heart {
+    position: absolute;
+    right: 12.9em;
+    top: 3.7em;
+    transform: rotate(138deg) scale(2.3);
+    z-index: 2;
+
+    .heart__half {
+      background-color: var(--tail-bg);
+
+      &:nth-child(1) {
+        box-shadow: -0.05em 0 0 0.05em var(--tail-border),
+          0.05em 0 0 0.05em var(--tail-border);
+      }
+
+      &:nth-child(2) {
+        box-shadow: 0.1em -0.1em 0 -0.1em var(--tail-border),
+          0 -0.1em 0 -0.1em var(--tail-border);
+      }
+    }
+  }
+}

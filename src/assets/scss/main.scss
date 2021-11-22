@@ -8,9 +8,13 @@
 @import './components/sock-pink/index';
 @import './components/skirt/index';
 @import './components/heart/index';
+@import './components/tail/index';
+@import './components/chest/index';
 
 .ironmouse {
-  font-size: 10px;
+  position: relative;
+  max-width: 150em;
+  font-size: 3px;
   margin: 0 auto;
 }
 
