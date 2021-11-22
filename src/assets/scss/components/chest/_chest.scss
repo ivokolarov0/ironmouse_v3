@@ -1,3 +1,37 @@
 .chest {
+  position: relative;
   height: 46.8em;
+}
+
+.chest-wrapper {
+  position: absolute;
+  top: 1.2em;
+  left: 50%;
+  width: 73.5em;
+  height: 77.1em;
+  border-radius: 50%;
+  transform: translateX(-50%);
+  overflow: hidden;
+
+  .chest__inner {
+    position: absolute;
+    top: -4.7em;
+    left: 50%;
+    width: 65.2em;
+    height: 105.8em;
+    border-radius: 50%;
+    transform: translateX(-50%);
+    overflow: hidden;
+  }
+
+  .chest__holder {
+    position: absolute;
+    top: -7.8em;
+    left: 50%;
+    width: 56.4em;
+    height: 75.7em;
+    transform: translateX(-50%);
+    background-color: var(--skin-color);
+    border-radius: 50%;
+  }
 }
