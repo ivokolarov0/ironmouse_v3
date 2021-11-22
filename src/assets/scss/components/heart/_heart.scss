@@ -3,6 +3,12 @@
   width: 9.5em;
   height: 8.8em;
   transform: rotate(-5deg);
+
+  &.white {
+    .heart__half {
+      background-color: #fff;
+    }
+  }
 }
 
 .heart__half {

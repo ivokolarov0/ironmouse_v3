@@ -1,0 +1,35 @@
+.stocking-stap {
+  position: absolute;
+  width: 4.3em;
+  height: 25.7em;
+  bottom: -2.4em;
+  right: 28em;
+  background: var(--stocking-strap);
+  border-left: 0.2em solid var(--stocking-strap-border);
+  border-right: 0.2em solid var(--stocking-strap-border);
+
+  .stocking-stap__square {
+    position: absolute;
+    top: 98%;
+    left: 50%;
+    width: 5.1em;
+    height: 4em;
+    transform: translateX(-50%);
+    border: 0.2em solid var(--stocking-strap-border);
+    border-radius: 0.8em;
+    overflow: hidden;
+  }
+
+  .stocking-stap__square-inner {
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 3.2em;
+    height: 2.3em;
+    border: 0.2em solid var(--stocking-strap-border);
+    border-radius: 0.4em;
+    transform: translate(-50%, -50%);
+    box-shadow: 0 0 0 3em var(--stocking-strap-square),
+      inset 0 0 0.3em 0.2em rgba(#000, 0.3);
+  }
+}

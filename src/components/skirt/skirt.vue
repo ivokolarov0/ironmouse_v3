@@ -3,6 +3,11 @@
     <skirt-under />
     <skirt-belt-top />
     <skirt-belt-bottom />
+    <div class="stocking-stap">
+      <div class="stocking-stap__square">
+        <div class="stocking-stap__square-inner"></div>
+      </div>
+    </div>
     <div class="skirt-crosses skirt-crosses--top">
       <skirt-cross />
       <skirt-cross class="purple" />

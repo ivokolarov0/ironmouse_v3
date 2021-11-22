@@ -8,6 +8,12 @@
         <span></span>
       </div>
     </div>
+    <div class="skirt-belt-buckle__holes">
+      <div class="skirt-belt-buckle__hole"></div>
+      <div class="skirt-belt-buckle__hole"></div>
+      <div class="skirt-belt-buckle__hole"></div>
+      <div class="skirt-belt-buckle__hole"></div>
+    </div>
   </div>
 </template>
 

@@ -36,5 +36,29 @@
     border-radius: 50%;
     background-color: var(--skirt-under);
     transform: translateX(-50%) rotate(-64deg);
+    box-shadow: 0 0.3em 0.4em 0.2em rgba(#000, 0.3);
+  }
+}
+
+.skirt-under__bottom {
+  position: absolute;
+  bottom: 1em;
+  left: 31.5em;
+  display: flex;
+  align-items: center;
+  gap: 0.6em;
+  justify-content: center;
+  transform: rotate(15deg);
+
+  .heart {
+    margin: 0 -2.3em;
+    transform: scale(0.45);
+  }
+
+  .skirt-under__dot {
+    width: 0.4em;
+    height: 0.4em;
+    border-radius: 50%;
+    background-color: #fff;
   }
 }

@@ -75,3 +75,39 @@
     border: 0.1em solid var(--belt-hole-border);
   }
 }
+
+.skirt-belt-buckle__holes {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+
+  .skirt-belt-buckle__hole {
+    position: absolute;
+    width: 1.1em;
+    height: 1.2em;
+    border-radius: 50%;
+    background-color: var(--belt-hole);
+
+    &:nth-child(1) {
+      top: 37%;
+      left: 15%;
+    }
+
+    &:nth-child(2) {
+      top: 42%;
+      left: 33%;
+    }
+
+    &:nth-child(3) {
+      top: 42%;
+      left: 75%;
+    }
+
+    &:nth-child(4) {
+      top: 37%;
+      left: 91%;
+    }
+  }
+}

@@ -127,7 +127,8 @@
 
     .skirt-line__heart {
       right: -0.3em;
-      bottom: 0.6em;
+      bottom: 0.2em;
+      transform: rotate(-2deg) scale(0.5);
     }
 
     .skirt-line__holder {
@@ -167,9 +168,24 @@
     }
 
     .skirt-line__heart {
-      right: -1.6em;
-      bottom: 4.3em;
-      transform: scale(0.5) rotate(-8deg);
+      right: -1.4em;
+      bottom: 5.3em;
+      transform: scale(0.5) rotate(-4deg);
+      perspective: 40em;
+
+      .heart {
+        &:nth-child(1) {
+          transform: scale(0.35) rotateY(30deg);
+        }
+
+        &:nth-child(2) {
+          transform: scale(0.5) rotateY(35deg);
+        }
+
+        &:nth-child(3) {
+          transform: scale(0.8) rotateY(35deg);
+        }
+      }
     }
 
     .skirt-line-outer {
@@ -238,7 +254,7 @@
       right: 2em;
       bottom: 5.3em;
       transform: scale(0.5) rotate(-8deg);
-      perspective: 30em;
+      perspective: 40em;
 
       .heart {
         &:nth-child(1) {
@@ -302,9 +318,24 @@
     }
 
     .skirt-line__heart {
-      right: 2.6em;
-      bottom: 4.7em;
-      transform: scale(0.5) rotate(-8deg);
+      right: 1.6em;
+      bottom: 5.5em;
+      transform: scale(0.5) rotate(-4deg);
+      perspective: 40em;
+
+      .heart {
+        &:nth-child(1) {
+          transform: scale(0.35) rotateY(40deg);
+        }
+
+        &:nth-child(2) {
+          transform: scale(0.5) rotateY(45deg);
+        }
+
+        &:nth-child(3) {
+          transform: scale(0.8) rotateY(45deg);
+        }
+      }
     }
 
     .skirt-line__holder {
@@ -364,6 +395,30 @@
       height: 32.6em;
       transform: rotate(-5deg);
       box-shadow: 0 -30em 0 10em var(--skirt);
+
+      &:before {
+        content: '';
+        position: absolute;
+        width: 3.4em;
+        height: 1.5em;
+        bottom: 2em;
+        left: -0.4em;
+        background-color: var(--skirt-stripe-pink);
+        z-index: 2;
+        transform: rotate(15deg);
+      }
+
+      &:after {
+        content: '';
+        position: absolute;
+        width: 6.9em;
+        height: 1.5em;
+        bottom: 2em;
+        right: -0.4em;
+        background-color: var(--skirt-stripe-pink);
+        z-index: 2;
+        transform: rotate(-2deg);
+      }
     }
 
     .skirt-line__transparent-left {
@@ -374,14 +429,24 @@
       height: 37em;
       transform: rotate(19deg);
       box-shadow: -10em 0 0 100em var(--skirt);
-      overflow: hidden;
-      border-left: 1.5em solid #fff;
+      backface-visibility: hidden;
+
+      &:before {
+        content: '';
+        position: absolute;
+        left: 0;
+        top: 0;
+        width: 1.5em;
+        height: 36em;
+        background: #fff;
+        z-index: 5;
+      }
 
       &:after {
         content: '';
         position: absolute;
         top: 7em;
-        left: 0;
+        left: 1.5em;
         width: 0.2em;
         height: 100%;
         background-color: var(--skirt-border);
@@ -390,10 +455,10 @@
 
     .skirt-line__transparent-right {
       position: absolute;
-      left: -7.1em;
-      top: -2.5em;
+      left: -4.7em;
+      top: 0.7em;
       width: 11em;
-      height: 35.5em;
+      height: 33em;
       transform: rotate(-15deg);
       box-shadow: 21em -10em 0 10em var(--skirt);
       border-right: 1.5em solid #fff;
