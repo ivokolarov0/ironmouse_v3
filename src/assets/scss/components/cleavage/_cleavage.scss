@@ -1,0 +1,61 @@
+.cleavage {
+  position: absolute;
+  top: 0;
+  left: 50%;
+  width: 20em;
+  height: 10em;
+  transform: translateX(-50%);
+
+  .cleavage-item {
+    position: absolute;
+    top: 0;
+    width: 25em;
+    height: 25em;
+    border-radius: 50%;
+    overflow: hidden;
+
+    &:nth-child(1) {
+      right: 44%;
+      box-shadow: 0.2em 0.28em 0.1em 0.1em var(--cleave-shadow);
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: -2.7em;
+        right: -5em;
+        width: 16em;
+        height: 14em;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          var(--cleave-shadow) 0,
+          transparent 30%
+        );
+        transform: rotate(-25deg);
+        opacity: 0.2;
+      }
+    }
+
+    &:nth-child(2) {
+      left: 44%;
+      box-shadow: -0.2em 0.28em 0.1em 0.1em var(--cleave-shadow);
+
+      &:after {
+        content: '';
+        position: absolute;
+        top: -2.7em;
+        left: -5em;
+        width: 16em;
+        height: 14em;
+        border-radius: 50%;
+        background: radial-gradient(
+          circle,
+          var(--cleave-shadow) 0,
+          transparent 30%
+        );
+        transform: rotate(25deg);
+        opacity: 0.2;
+      }
+    }
+  }
+}

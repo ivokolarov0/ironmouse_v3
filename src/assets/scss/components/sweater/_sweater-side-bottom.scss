@@ -1,0 +1,35 @@
+.sweater-side-bottom {
+  position: absolute;
+  top: 18em;
+  width: 3.4em;
+  height: 11.5em;
+  overflow: hidden;
+
+  &--left {
+    transform: rotate(-41deg);
+    left: 2.8em;
+
+    .sweater-side-bottom__inner {
+      left: 0.4em;
+      bottom: -11em;
+    }
+  }
+
+  &--right {
+    transform: rotate(41deg);
+    right: 2.6em;
+
+    .sweater-side-bottom__inner {
+      right: 0.4em;
+      bottom: -11em;
+    }
+  }
+
+  .sweater-side-bottom__inner {
+    position: absolute;
+    width: 9.5em;
+    height: 23.4em;
+    border-radius: 50%;
+    background-color: var(--sweater-side-strap);
+  }
+}

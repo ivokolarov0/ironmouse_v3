@@ -22,6 +22,8 @@
     border-radius: 50%;
     transform: translateX(-50%);
     overflow: hidden;
+    border-left: 0.2em solid var(--skin-border);
+    border-right: 0.2em solid var(--skin-border);
   }
 
   .chest__holder {

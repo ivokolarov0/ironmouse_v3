@@ -1,0 +1,52 @@
+.breast-area {
+  position: absolute;
+  top: 6.8em;
+  left: 50.4%;
+  transform: translateX(-50%);
+  width: 51.2em;
+  height: 18.8em;
+  overflow: hidden;
+  z-index: 1;
+
+  .breast {
+    position: absolute;
+    bottom: 0.6em;
+    width: 32em;
+    height: 26.3em;
+    border-radius: 50%;
+    background-color: var(--sweater);
+
+    &--left {
+      left: -0.5em;
+      transform: rotate(-23deg);
+      border-left: 0.2em solid var(--sweater-border);
+    }
+
+    &--right {
+      right: 0em;
+      transform: rotate(23deg);
+      border-right: 0.2em solid var(--sweater-border);
+    }
+  }
+
+  .breast-area-center {
+    position: absolute;
+    top: 16.3em;
+    left: 50%;
+    width: 10em;
+    height: 2em;
+    overflow: hidden;
+    transform: translateX(-50%);
+
+    .breast-area-center__inner {
+      position: absolute;
+      top: 0.1em;
+      left: 50%;
+      width: 15em;
+      height: 7em;
+      border-radius: 50%;
+      transform: translateX(-50%);
+      box-shadow: 0 -0.02em 0 0 var(--sweater-border);
+    }
+  }
+}

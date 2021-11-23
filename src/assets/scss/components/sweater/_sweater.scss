@@ -1,0 +1,18 @@
+.sweater {
+  position: absolute;
+  top: 32em;
+  left: 50%;
+  width: 50.8em;
+  height: 35.5em;
+  transform: translateX(-50%);
+
+  .sweater__inner {
+    position: absolute;
+    top: 6.5em;
+    left: 50%;
+    width: 39.2em;
+    height: 30.5em;
+    transform: translateX(-50%);
+    background-color: var(--sweater);
+  }
+}
