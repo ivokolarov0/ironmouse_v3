@@ -1,5 +1,6 @@
 <template>
   <div class="ironmouse">
+    <arms />
     <chest />
     <tail />
     <skirt />
@@ -50,7 +51,8 @@ import Skirt from '../skirt/skirt.vue';
 import SockPink from '../sock-pink/sock-pink.vue';
 import SockPurple from '../sock-purple/sock-purple.vue';
 import Tail from '../tail/tail.vue';
+import Arms from '../arms/arms.vue';
 export default {
-  components: { boot, Leg, SockPurple, SockPink, Skirt, Chest, Tail },
+  components: { boot, Leg, SockPurple, SockPink, Skirt, Chest, Tail, Arms },
 };
 </script>

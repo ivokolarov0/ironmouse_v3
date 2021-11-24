@@ -1,0 +1,116 @@
+.finger {
+  .finger__inner {
+    position: absolute;
+    width: 2.5em;
+  }
+
+  &:nth-child(5),
+  &:nth-child(4),
+  &:nth-child(2),
+  &:nth-child(1) {
+    .finger__inner {
+      top: 2em;
+      left: 1.1em;
+      width: 3.1em;
+      height: 10.4em;
+      overflow: hidden;
+    }
+
+    .finger-left {
+      position: absolute;
+      right: 1.7em;
+      bottom: -2em;
+      width: 14.9em;
+      height: 31.8em;
+      border-radius: 50%;
+      transform: rotate(-18deg);
+      overflow: hidden;
+      border-right: 0.2em solid var(--skin-border);
+    }
+
+    .finger-right {
+      position: absolute;
+      bottom: -7em;
+      right: 3.6em;
+      transform: rotate(15deg);
+      width: 9.3em;
+      height: 31em;
+      border-radius: 50%;
+      box-shadow: 0 0 0 0.2em var(--skin-border), 0 0 0 5em var(--skin-color);
+    }
+  }
+
+  &:nth-child(1) {
+    .finger__inner {
+      z-index: 5;
+    }
+  }
+
+  &:nth-child(2) {
+    .finger__inner {
+      left: 2.5em;
+      transform: rotate(-12deg);
+      z-index: 4;
+    }
+
+    .finger-right {
+      box-shadow: 0 0 0 0.2em var(--skin-border), 0 0 0 5em var(--skin-shadow);
+    }
+  }
+
+  &:nth-child(3) {
+    .finger__inner {
+      top: 1.8em;
+      left: 4.5em;
+      width: 2.3em;
+      height: 7.1em;
+      transform: rotate(-32deg);
+      overflow: hidden;
+    }
+
+    .finger__first {
+      position: absolute;
+      top: -4em;
+      right: 0;
+      transform: rotate(3deg);
+      width: 2.7em;
+      height: 6.9em;
+      border-radius: 50%;
+      background-color: var(--skin-shadow);
+    }
+
+    .finger__second {
+      position: absolute;
+      top: 0.7em;
+      right: 0.5em;
+      transform: rotate(3deg);
+      width: 4em;
+      height: 6.4em;
+      border-radius: 50%;
+      background-color: var(--skin-shadow);
+    }
+  }
+
+  &:nth-child(4) {
+    .finger__inner {
+      left: 5.1em;
+      top: -0.7em;
+      height: 4.3em;
+      transform: rotate(-57deg);
+    }
+    .finger-right {
+      box-shadow: 0 0 0 0.2em var(--skin-border), 0 0 0 5em var(--skin-shadow);
+    }
+  }
+
+  &:nth-child(5) {
+    transform: rotateY(180deg);
+
+    .finger__inner {
+      left: 2.1em;
+      top: -0.7em;
+      height: 4.3em;
+      transform: rotate(45deg);
+    }
+  }
+}

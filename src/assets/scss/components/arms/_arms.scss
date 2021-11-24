@@ -1,0 +1,27 @@
+.arms {
+  position: absolute;
+  top: 2.9em;
+  left: 50%;
+  width: 151.8em;
+  height: 125.8em;
+  transform: translateX(-50%);
+  background-color: red;
+
+  .arm {
+    position: absolute;
+    top: -2em;
+    width: 38.9em;
+    height: 131.6em;
+    background-color: green;
+
+    &:nth-child(1) {
+      left: 13em;
+      transform: rotate(25deg);
+    }
+
+    &:nth-child(2) {
+      right: 13em;
+      transform: rotate(-25deg);
+    }
+  }
+}

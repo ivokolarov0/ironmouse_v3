@@ -1,0 +1,42 @@
+.sleave-middle {
+  .sleave-middle__inner {
+    position: absolute;
+    top: 34.6em;
+    left: 4.6em;
+    transform: rotate(12deg);
+    width: 42.8em;
+    height: 80em;
+    overflow: hidden;
+  }
+
+  .sleave-middle__side {
+    position: absolute;
+    bottom: 0em;
+    left: -1.9em;
+    width: 36.9em;
+    height: 66.5em;
+    transform: rotate(-8deg);
+    overflow: hidden;
+  }
+
+  .sleave-middle__left {
+    position: absolute;
+    left: -10em;
+    top: -17em;
+    width: 96.3em;
+    height: 84.2em;
+    background-color: var(--sweater);
+    border-radius: 50%;
+    transform: rotate(-55deg);
+  }
+}
+
+.arms {
+  .arm {
+    &:nth-child(2) {
+      .sleave-middle {
+        transform: rotateY(180deg);
+      }
+    }
+  }
+}

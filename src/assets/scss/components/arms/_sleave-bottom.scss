@@ -1,0 +1,96 @@
+.sleave-bottom {
+  position: absolute;
+  bottom: 10em;
+  left: 9.3em;
+  width: 28.1em;
+  height: 12.5em;
+  transform: rotate(19deg);
+  z-index: 10;
+
+  // .sleave-bottom__inner {
+  //   position: absolute;
+  // }
+
+  .sleave-bottom-left {
+    position: absolute;
+    top: -18.1em;
+    left: -0.7em;
+    width: 28em;
+    height: 38.9em;
+    transform: rotate(-43deg);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .sleave-bottom-right {
+    position: absolute;
+    top: 1.2em;
+    left: -1.4em;
+    width: 19em;
+    height: 34.9em;
+    transform: rotate(127deg);
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 1.7em;
+      width: 9em;
+      height: 0.2em;
+      background-color: var(--sweater-border);
+    }
+  }
+
+  .sleave-bottom_b {
+    position: absolute;
+    bottom: 2.8em;
+    left: -19.7em;
+    width: 45.4em;
+    height: 30.1em;
+    border-radius: 50%;
+    transform: rotate(79deg);
+    overflow: hidden;
+    border: 0.2em solid var(--sweater-border);
+  }
+
+  .sleave-bottom_t {
+    position: absolute;
+    bottom: -7.9em;
+    left: -2em;
+    width: 45.1em;
+    height: 29.8em;
+    border-radius: 50%;
+    transform: rotate(-10deg);
+    box-shadow: 0 0 0 10em var(--sleave-bottom);
+    border: 0.2em solid var(--sweater-border);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: -16.6em;
+      left: -4.2em;
+      width: 40em;
+      height: 40em;
+      border-radius: 50%;
+      border: 0.2em solid transparent;
+      transform: rotate(-53deg);
+      box-shadow: 27.6em 1em 0 1em var(--sweater-border);
+    }
+  }
+}
+
+.arms {
+  .arm {
+    &:nth-child(2) {
+      .sleave-bottom {
+        right: 9.3em;
+        left: auto;
+        transform: rotate(-19deg);
+        .sleave-bottom__inner {
+          transform: rotateY(180deg);
+        }
+      }
+    }
+  }
+}
