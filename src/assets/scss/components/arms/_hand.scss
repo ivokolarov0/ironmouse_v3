@@ -1,22 +1,8 @@
 .hand {
   position: absolute;
   bottom: 0.3em;
+  right: 3.7em;
   width: 14.4em;
   height: 12.9em;
   overflow: hidden;
-}
-
-.arm {
-  &:nth-child(1) {
-    .hand {
-      right: 3.7em;
-    }
-  }
-
-  &:nth-child(2) {
-    .hand {
-      right: 20.5em;
-      transform: rotateY(180deg);
-    }
-  }
 }

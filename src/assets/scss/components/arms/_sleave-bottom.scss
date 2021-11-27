@@ -79,18 +79,3 @@
     }
   }
 }
-
-.arms {
-  .arm {
-    &:nth-child(2) {
-      .sleave-bottom {
-        right: 9.3em;
-        left: auto;
-        transform: rotate(-19deg);
-        .sleave-bottom__inner {
-          transform: rotateY(180deg);
-        }
-      }
-    }
-  }
-}

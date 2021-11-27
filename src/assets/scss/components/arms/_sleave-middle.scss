@@ -30,13 +30,3 @@
     transform: rotate(-55deg);
   }
 }
-
-.arms {
-  .arm {
-    &:nth-child(2) {
-      .sleave-middle {
-        transform: rotateY(180deg);
-      }
-    }
-  }
-}
