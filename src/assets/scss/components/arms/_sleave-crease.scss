@@ -1,0 +1,50 @@
+.sleave-crease {
+  position: absolute;
+  top: 40.8em;
+  left: 7.2em;
+  width: 7.7em;
+  height: 12.6em;
+  overflow: hidden;
+
+  .sleave-crease__inner-d,
+  .sleave-crease__inner {
+    position: absolute;
+    top: -8em;
+    left: 2em;
+    width: 11.5em;
+    height: 29.6em;
+    border-radius: 50%;
+    transform: rotate(-25deg);
+    overflow: hidden;
+  }
+
+  .sleave-crease__side {
+    position: absolute;
+    top: 8em;
+    left: -3.2em;
+    width: 12.2em;
+    height: 9.1em;
+    transform: rotate(145deg);
+    overflow: hidden;
+    background-color: var(--sweater);
+    border-bottom: 0.2em solid var(--sweater-border);
+  }
+
+  .sleave-crease__side-ov {
+    position: absolute;
+    top: 0.9em;
+    left: 2.3em;
+    width: 8.7em;
+    height: 8.5em;
+    transform: rotate(-55deg);
+    overflow: hidden;
+  }
+
+  .sleave-crease__inner-d {
+    top: -14.1em;
+    left: 0.6em;
+    border-radius: 50%;
+    transform: rotate(91deg);
+    border-right: 0.3em solid var(--sweater-border);
+  }
+}

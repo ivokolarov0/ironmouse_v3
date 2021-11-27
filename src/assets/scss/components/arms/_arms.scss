@@ -5,23 +5,27 @@
   width: 151.8em;
   height: 125.8em;
   transform: translateX(-50%);
-  background-color: red;
 
   .arm {
-    position: absolute;
-    top: -2em;
-    width: 38.9em;
-    height: 131.6em;
-    background-color: green;
+    .arm__inner {
+      position: absolute;
+      top: -2em;
+      width: 38.9em;
+      height: 131.6em;
+    }
 
     &:nth-child(1) {
-      left: 13em;
-      transform: rotate(25deg);
+      .arm__inner {
+        left: 13em;
+        transform: rotate(25deg);
+      }
     }
 
     &:nth-child(2) {
-      right: 13em;
-      transform: rotate(-25deg);
+      .arm__inner {
+        right: 13em;
+        transform: rotate(-25deg);
+      }
     }
   }
 }

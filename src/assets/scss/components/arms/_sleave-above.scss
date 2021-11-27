@@ -1,0 +1,18 @@
+.sleave-above {
+  position: absolute;
+  top: 29em;
+  left: 12em;
+  width: 25.2em;
+  height: 35.2em;
+  transform: rotate(-20deg);
+  background-color: var(--sweater);
+
+  .sleave-above__inner {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 10em;
+    height: 10em;
+    border-left: 0.2em solid var(--sweater-border);
+  }
+}
