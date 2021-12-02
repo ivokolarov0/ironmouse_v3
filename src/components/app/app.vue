@@ -1,5 +1,14 @@
 <template>
   <div class="ironmouse">
+    <Head />
+    <div class="sleave-top-holder">
+      <div class="sleave-top-behind">
+        <div class="sleave-top-behind__inner"></div>
+      </div>
+      <div class="sleave-top-behind sleave-top-behind--right">
+        <div class="sleave-top-behind__inner"></div>
+      </div>
+    </div>
     <chest />
     <tail />
     <skirt />
@@ -50,7 +59,9 @@ import Skirt from '../skirt/skirt.vue';
 import SockPink from '../sock-pink/sock-pink.vue';
 import SockPurple from '../sock-purple/sock-purple.vue';
 import Tail from '../tail/tail.vue';
+import Head from '../head/head.vue';
+
 export default {
-  components: { boot, Leg, SockPurple, SockPink, Skirt, Chest, Tail },
+  components: { boot, Leg, SockPurple, SockPink, Skirt, Chest, Tail, Head },
 };
 </script>

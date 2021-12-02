@@ -1,0 +1,33 @@
+.sleave-top-behind {
+  position: absolute;
+  top: 22.8em;
+  right: 50%;
+  width: 16.2em;
+  height: 5.5em;
+  transform: rotate(5deg) translateX(-26.2em);
+  overflow: hidden;
+
+  .sleave-top-behind__inner {
+    position: absolute;
+    top: 0.3em;
+    left: -3em;
+    width: 31.8em;
+    height: 13.1em;
+    background-color: var(--sweater-behind);
+    border-top: 0.4em solid var(--sweater-border);
+    border-radius: 50%;
+  }
+
+  &--right {
+    right: auto;
+    left: 50%;
+    top: 21em;
+    transform: rotate(-1deg) translateX(26em);
+
+    .sleave-top-behind__inner {
+      left: auto;
+      right: -6em;
+      top: 1em;
+    }
+  }
+}

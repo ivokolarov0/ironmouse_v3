@@ -1,0 +1,59 @@
+.arm-belt__buckle-c,
+.arm-belt__buckle {
+  position: absolute;
+  top: 10.1em;
+  left: 0.9em;
+  transform: rotate(-4deg);
+  width: 3.6em;
+  height: 7.5em;
+  overflow: hidden;
+
+  .arm-belt__buckle-inner-c,
+  .arm-belt__buckle-inner {
+    position: absolute;
+    top: 0.5em;
+    right: -0.8em;
+    width: 5.3em;
+    height: 6.6em;
+    transform: rotate(-16deg);
+    overflow: hidden;
+  }
+
+  .arm-belt__buckle-leather {
+    position: absolute;
+    top: 1em;
+    left: 1.5em;
+    width: 2.4em;
+    height: 4.8em;
+    transform: rotate(5deg) skew(-11deg);
+    background-color: var(--arm-belt);
+    box-shadow: 0 0 0 0.6em var(--arm-belt-buckle);
+  }
+
+  .arm-belt__buckle-c {
+    top: -1.7em;
+    left: -0.6em;
+    transform: rotate(11deg) skew(11deg);
+    border-left: 0.2em solid var(--arm-belt-border);
+    border-right: 0.2em solid var(--arm-belt-border);
+    border-radius: 15%;
+  }
+
+  .arm-belt__buckle-inner-c {
+    top: 0.6em;
+    transform: rotate(-10deg) skew(0);
+    border-bottom: 0.2em solid var(--arm-belt-border);
+    border-radius: 0 0 35% 20%;
+
+    &:after {
+      content: '';
+      position: absolute;
+      width: 100%;
+      height: 2em;
+      top: 0.2em;
+      right: 0.2em;
+      border-top: 0.2em solid var(--arm-belt-border);
+      transform: rotate(-4deg);
+    }
+  }
+}

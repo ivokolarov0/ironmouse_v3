@@ -1,0 +1,49 @@
+.arm-belt__top {
+  position: absolute;
+  top: 0.5em;
+  left: 0.3em;
+  width: 4.3em;
+  height: 11.4em;
+  overflow: hidden;
+}
+
+.arm-belt__top-tc {
+  position: absolute;
+  top: -3.5em;
+  left: -2.5em;
+  width: 28.1em;
+  height: 39.6em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.arm-belt__top-lc {
+  position: absolute;
+  top: -8.9em;
+  left: 2.8em;
+  width: 24.9em;
+  height: 38.7em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.arm-belt__top-b {
+  position: absolute;
+  top: 12.4em;
+  left: -0.9em;
+  width: 6.3em;
+  height: 10.2em;
+  transform: rotate(-15deg);
+  overflow: hidden;
+}
+
+.arm-belt__top-rc {
+  position: absolute;
+  top: -6.2em;
+  left: 3.1em;
+  width: 24.9em;
+  height: 38.7em;
+  border-radius: 50%;
+  overflow: hidden;
+  box-shadow: 0 0 0 10em var(--arm-belt);
+}

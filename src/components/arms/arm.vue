@@ -69,10 +69,21 @@
           </div>
         </div>
       </div>
-      <div class="sleave-top"></div>
-      <!-- /.sleave-top -->
+      <slot />
+      <div class="sleave-top">
+        <div class="sleave-top__inner">
+          <div class="sleave-top__left">
+            <div class="sleave-top__bottom">
+              <div class="sleave-top__inner-d">
+                <div class="sleave-top__left-d">
+                  <div class="sleave-top__bottom-d"></div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
     </div>
-    <!-- /.arm__inner -->
   </div>
 </template>
 

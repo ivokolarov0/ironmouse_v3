@@ -5,6 +5,8 @@
         <div class="chest__holder"></div>
       </div>
     </div>
+    <arm-belt class="left" />
+    <arm-belt class="right" />
     <arms />
     <div class="sweater">
       <div class="cleavage">
@@ -45,8 +47,9 @@
 </template>
 
 <script>
+import ArmBelt from '../arm-belt/arm-belt.vue';
 import arms from '../arms/arms.vue';
 export default {
-  components: { arms },
+  components: { arms, ArmBelt },
 };
 </script>

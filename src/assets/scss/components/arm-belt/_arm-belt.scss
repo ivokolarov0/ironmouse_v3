@@ -1,0 +1,18 @@
+.arm-belt {
+  position: relative;
+  z-index: 2;
+  .arm-belt__inner {
+    position: absolute;
+    top: 2.7em;
+    width: 5em;
+    height: 27.5em;
+    z-index: 11;
+    overflow: hidden;
+    left: 51.6em;
+    transform: rotate(18deg);
+  }
+
+  &.right {
+    transform: rotateY(180deg);
+  }
+}

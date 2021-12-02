@@ -1,0 +1,10 @@
+.mouth {
+  position: absolute;
+  left: 100%;
+  bottom: 7.5em;
+  width: 5.7em;
+  height: 2.3em;
+  border-radius: 50%;
+  border-bottom: 0.2em solid var(--mouth);
+  transform: translateX(-50%);
+}

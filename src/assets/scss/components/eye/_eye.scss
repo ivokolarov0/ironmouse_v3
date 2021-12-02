@@ -1,0 +1,91 @@
+.eye {
+  position: absolute;
+  left: 1.6em;
+  top: 29.1em;
+  width: 14.6em;
+  height: 10.1em;
+  overflow: hidden;
+
+  .eye__inner {
+    position: absolute;
+    width: 11.2em;
+    height: 16em;
+    left: 1.9em;
+    top: -5.1em;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .eye__right {
+    position: absolute;
+    width: 11.2em;
+    height: 16em;
+    left: -1.1em;
+    top: 1.8em;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .eye__t-b {
+    position: absolute;
+    top: 4.4em;
+    left: 1em;
+    width: 10.5em;
+    height: 8.8em;
+    background-color: var(--eye-bg);
+    overflow: hidden;
+  }
+
+  .eye__oval {
+    position: absolute;
+    bottom: -0.7em;
+    left: 1.7em;
+    width: 7.7em;
+    height: 11.5em;
+    border-radius: 50%;
+    background-color: red;
+    background: linear-gradient(
+      to bottom,
+      var(--eye-gradient-top) 0%,
+      var(--eye-gradient-bottom) 100%
+    );
+    box-shadow: inset 0 7.5em 0 -2.1em rgba(0, 0, 0, 0.5);
+  }
+
+  .eye__iris {
+    position: absolute;
+    top: 50%;
+    left: 54%;
+    width: 1.1em;
+    height: 2.5em;
+    border-radius: 50%;
+    transform: translate(-50%, -50%);
+    background-color: var(--eye-iris);
+    border: 0.05em solid var(--eye-iris-border);
+  }
+
+  .highlights {
+    .highlight {
+      position: absolute;
+      border-radius: 50%;
+
+      &:nth-child(1) {
+        left: 1.2em;
+        top: 2em;
+        width: 2.1em;
+        height: 1.5em;
+        transform: rotate(-40deg);
+        background-color: var(--eye-highlight1);
+      }
+
+      &:nth-child(2) {
+        left: 2.9em;
+        top: 3em;
+        width: 0.6em;
+        height: 0.8em;
+        transform: rotate(44deg);
+        background-color: var(--eye-highlight1);
+      }
+    }
+  }
+}

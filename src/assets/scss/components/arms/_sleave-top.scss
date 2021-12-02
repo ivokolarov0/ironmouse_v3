@@ -1,0 +1,77 @@
+.sleave-top-holder {
+  position: relative;
+}
+
+.sleave-top {
+  position: absolute;
+  top: 18em;
+  left: 2.6em;
+  width: 27.1em;
+  height: 14.2em;
+  overflow: hidden;
+  transform: rotate(-25deg);
+  border-radius: 20% 0 0 0;
+
+  .sleave-top__inner-d,
+  .sleave-top__inner {
+    position: absolute;
+    top: 1em;
+    left: -62em;
+    width: 111.1em;
+    height: 47em;
+    overflow: hidden;
+    border-radius: 50%;
+  }
+
+  .sleave-top__left-d,
+  .sleave-top__left {
+    position: absolute;
+    top: -15em;
+    right: 28.6em;
+    width: 20.3em;
+    height: 37.7em;
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .sleave-top__bottom-d,
+  .sleave-top__bottom {
+    position: absolute;
+    top: -8.7em;
+    left: -26em;
+    width: 85.3em;
+    height: 36.6em;
+    background-color: var(--sweater-top);
+    border-radius: 50%;
+    overflow: hidden;
+  }
+
+  .sleave-top__inner-d {
+    top: 23.8em;
+    left: -35.7em;
+    border-top: 0.4em solid var(--sweater-border);
+  }
+
+  .sleave-top__left-d {
+    right: 29em;
+    border-left: 0.4em solid var(--sweater-border);
+  }
+
+  .sleave-top__bottom-d {
+    top: -9.1em;
+    border-bottom: 0.4em solid var(--sweater-border);
+
+    &:before {
+      content: '';
+      position: absolute;
+      bottom: 0.3em;
+      right: 43em;
+      width: 14em;
+      height: 11em;
+      transform: rotate(5deg) skew(6deg);
+      border-radius: 20%;
+      box-shadow: 0 0 3em 6em rgb(0, 0, 0, 0.1),
+        inset 0 0 3em 1.5em rgb(0, 0, 0, 0.1);
+    }
+  }
+}

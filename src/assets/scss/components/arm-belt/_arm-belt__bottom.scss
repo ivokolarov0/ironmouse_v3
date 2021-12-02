@@ -1,0 +1,39 @@
+.arm-belt__bottom {
+  position: absolute;
+  top: 16.3em;
+  left: 0.5em;
+  width: 3.8em;
+  height: 10.9em;
+  transform: rotate(11deg);
+  overflow: hidden;
+}
+
+.arm-belt__bottom-b {
+  position: absolute;
+  bottom: 0.2em;
+  left: -1.4em;
+  width: 6.3em;
+  height: 14.1em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.arm-belt__bottom-l {
+  position: absolute;
+  width: 9em;
+  height: 24em;
+  top: -3.8em;
+  left: 1.5em;
+  border-radius: 50%;
+  overflow: hidden;
+}
+
+.arm-belt__bottom-r {
+  position: absolute;
+  width: 9em;
+  height: 24em;
+  left: 2.7em;
+  top: -2.1em;
+  border-radius: 50%;
+  box-shadow: 0 0 0 10em var(--arm-belt);
+}
