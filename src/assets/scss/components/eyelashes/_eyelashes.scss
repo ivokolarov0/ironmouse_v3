@@ -1,23 +1,20 @@
-.eyelashes {
-}
-
 .eyelashes__side {
   position: absolute;
   width: 1.2em;
   height: 1.2em;
-  border-radius: 50%;
+  border-radius: 40%;
   border-top: 0.2em solid var(--eyelash);
   opacity: 0.5;
 
   &:nth-child(1) {
     left: 2.3em;
-    bottom: 1em;
+    bottom: 4em;
     transform: rotate(15deg);
   }
 
   &:nth-child(2) {
     left: 3em;
-    bottom: 0.2em;
+    bottom: 3.2em;
     transform: rotate(15deg);
   }
 }

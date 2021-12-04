@@ -1,0 +1,88 @@
+.horns {
+  position: absolute;
+  top: 1.8em;
+  left: 50%;
+  width: 60.5em;
+  height: 27.5em;
+  transform: translateX(-50%);
+  overflow: hidden;
+}
+
+.horn-outer {
+  position: absolute;
+  top: 0;
+  width: 50%;
+  height: 100%;
+  overflow: hidden;
+
+  .horn {
+    position: absolute;
+    top: -11em;
+    width: 31.1em;
+    height: 46.7em;
+    border-radius: 50%;
+    overflow: hidden;
+    border-left: 0.2em solid var(--horn-border);
+  }
+
+  &:nth-child(1) {
+    left: 0;
+    animation: hornMove 3s infinite alternate;
+    .horn {
+      left: 5.3em;
+    }
+  }
+
+  &:nth-child(2) {
+    right: 0;
+    animation: hornMove2 3s infinite alternate;
+    .horn {
+      right: 5.3em;
+      transform: rotateY(180deg);
+    }
+  }
+
+  .horn__inner {
+    position: absolute;
+    left: 2.1em;
+    top: -15em;
+    width: 29em;
+    height: 46em;
+    border-radius: 50%;
+    border-left: 0.2em solid var(--horn-border);
+    box-shadow: -20em 0 0 2em #fff;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 15em;
+      left: -2.4em;
+      width: 31.1em;
+      height: 46.7em;
+      border-radius: 50%;
+      box-shadow: inset 4.5em -7em 2em -4em rgba(0, 0, 0, 0.12);
+    }
+  }
+}
+
+@keyframes hornMove {
+  0%,
+  96% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(-2deg);
+  }
+}
+
+@keyframes hornMove2 {
+  0%,
+  96% {
+    transform: rotate(0);
+  }
+
+  100% {
+    transform: rotate(2deg);
+  }
+}
