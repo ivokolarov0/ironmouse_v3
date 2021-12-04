@@ -4,6 +4,9 @@
       <div class="face__left">
         <div class="face__bottom"></div>
       </div>
+      <div class="eyebrow">
+        <div class="eyebrow__inner"></div>
+      </div>
       <div class="mouth"></div>
       <div class="nose"></div>
       <eye />

@@ -1,6 +1,14 @@
 <template>
   <div class="ironmouse">
     <Head />
+    <div class="neck">
+      <div class="neck__inner">
+        <div class="neck__bell"></div>
+      </div>
+    </div>
+    <div class="neck-bell">
+      <div class="neck-bell__inner"></div>
+    </div>
     <div class="sleave-top-holder">
       <div class="sleave-top-behind">
         <div class="sleave-top-behind__inner"></div>

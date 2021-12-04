@@ -12,6 +12,14 @@
         </div>
       </div>
     </div>
+    <div class="ears">
+      <div class="ear">
+        <div class="ear__inner"></div>
+      </div>
+      <div class="ear">
+        <div class="ear__inner"></div>
+      </div>
+    </div>
     <face class="face--left" />
     <face class="face--right" />
   </div>

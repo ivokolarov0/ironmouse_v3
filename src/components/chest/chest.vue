@@ -2,6 +2,9 @@
   <div class="chest">
     <div class="chest-wrapper">
       <div class="chest__inner">
+        <div class="collarbone">
+          <div class="collarbone__inner"></div>
+        </div>
         <div class="chest__holder"></div>
       </div>
     </div>
