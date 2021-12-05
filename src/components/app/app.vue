@@ -9,6 +9,50 @@
     <div class="neck-bell">
       <div class="neck-bell__inner"></div>
     </div>
+    <div class="neck-ribbon-holder">
+      <div class="neck-ribbon">
+        <div class="neck-ribbon__line neck-ribbon__line--shadow">
+          <div class="neck-ribbon__line-inner">
+            <div class="neck-ribbon__line-left"></div>
+            <div class="neck-ribbon__line-right"></div>
+          </div>
+        </div>
+        <div class="neck-ribbon__line">
+          <div class="neck-ribbon__line-inner">
+            <div class="neck-ribbon__line-left"></div>
+            <div class="neck-ribbon__line-right"></div>
+          </div>
+        </div>
+        <div class="neck-ribbon__top">
+          <div class="neck-ribbon__bottom">
+            <div class="neck-ribbon__left1">
+              <div class="neck-ribbon__left2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+      <div class="neck-ribbon">
+        <div class="neck-ribbon__line neck-ribbon__line--shadow">
+          <div class="neck-ribbon__line-inner">
+            <div class="neck-ribbon__line-left"></div>
+            <div class="neck-ribbon__line-right"></div>
+          </div>
+        </div>
+        <div class="neck-ribbon__line">
+          <div class="neck-ribbon__line-inner">
+            <div class="neck-ribbon__line-left"></div>
+            <div class="neck-ribbon__line-right"></div>
+          </div>
+        </div>
+        <div class="neck-ribbon__top">
+          <div class="neck-ribbon__bottom">
+            <div class="neck-ribbon__left1">
+              <div class="neck-ribbon__left2"></div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
     <div class="sleave-top-holder">
       <div class="sleave-top-behind">
         <div class="sleave-top-behind__inner"></div>

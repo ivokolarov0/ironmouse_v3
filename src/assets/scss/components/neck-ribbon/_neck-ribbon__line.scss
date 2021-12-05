@@ -1,0 +1,74 @@
+.neck-ribbon__line {
+  position: absolute;
+  top: 4.3em;
+  left: 3.9em;
+  width: 7.8em;
+  height: 12.4em;
+  transform: rotate(22deg);
+  border-left: 0.2em solid var(--neck-ribbon-border);
+  overflow: hidden;
+
+  .neck-ribbon__line-inner {
+    position: absolute;
+    top: 0.8em;
+    right: 1.8em;
+    width: 100%;
+    height: 100%;
+    transform: rotate(-16deg);
+    border-right: 0.2em solid var(--neck-ribbon-border);
+    overflow: hidden;
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0;
+      left: 0;
+      width: 100%;
+      height: 9.5em;
+      background-color: var(--neck-ribbon);
+    }
+  }
+}
+
+.neck-ribbon__line-left {
+  position: absolute;
+  width: 4.1em;
+  height: 3.8em;
+  left: -0.1em;
+  bottom: 2.1em;
+  transform: rotate(-15deg);
+  background-color: var(--neck-ribbon);
+  border-bottom: 0.2em solid var(--neck-ribbon-border);
+}
+
+.neck-ribbon__line-right {
+  position: absolute;
+  bottom: 0.6em;
+  right: -2.5em;
+  width: 4.9em;
+  height: 3.8em;
+  transform: rotate(42deg);
+  background-color: var(--neck-ribbon);
+  border-bottom: 0.2em solid var(--neck-ribbon-border);
+}
+
+.neck-ribbon__line--shadow {
+  top: 5.1em;
+  left: 3.5em;
+  transform: rotate(23deg);
+
+  &,
+  .neck-ribbon__line-inner {
+    border-color: var(--neck-ribbon-shadow);
+
+    &:after {
+      background-color: var(--neck-ribbon-shadow);
+    }
+  }
+
+  .neck-ribbon__line-left,
+  .neck-ribbon__line-right {
+    border-color: var(--neck-ribbon-shadow);
+    background: var(--neck-ribbon-shadow);
+  }
+}
