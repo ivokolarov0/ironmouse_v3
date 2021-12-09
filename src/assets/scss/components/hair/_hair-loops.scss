@@ -1,0 +1,48 @@
+.hair-loops {
+  .hair-loop {
+    position: absolute;
+
+    &:nth-child(1) {
+      top: 4.5em;
+      left: 9.3em;
+      width: 14em;
+      height: 21.8em;
+      overflow: hidden;
+
+      .hair-loop__inner {
+        position: absolute;
+        top: 6.7em;
+        left: -8.7em;
+        width: 26.1em;
+        height: 9.1em;
+        transform: rotate(-56deg);
+        overflow: hidden;
+      }
+
+      .hair-loop__circle1 {
+        position: absolute;
+        top: -6em;
+        left: 4.4em;
+        width: 13.86em;
+        height: 30.7em;
+        border-radius: 50%;
+        transform: rotate(64deg);
+        box-shadow: inset 1.2em 0.4em 0 -0.2em var(--hair);
+        border-left: 0.2em solid var(--hair-border);
+        z-index: 1;
+      }
+
+      .hair-loop__circle2 {
+        position: absolute;
+        top: 0.9em;
+        right: 1em;
+        width: 6em;
+        height: 7.4em;
+        border-radius: 50%;
+        transform: rotate(70deg);
+        box-shadow: inset -0.2em 1.3em 0 -0.2em var(--hair-shadow);
+        border-top: 0.2em solid var(--hair-border);
+      }
+    }
+  }
+}

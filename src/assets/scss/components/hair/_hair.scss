@@ -1,0 +1,25 @@
+.hair {
+  position: absolute;
+  top: 10.8em;
+  left: 50%;
+  transform: translateX(-50.1%);
+  width: 93.4em;
+  height: 85.3em;
+  background-color: red;
+
+  .hair__side {
+    position: absolute;
+    width: 50%;
+    height: 100%;
+    background-color: green;
+
+    &:nth-child(1) {
+      left: 0;
+    }
+
+    &:nth-child(2) {
+      right: 0;
+      transform: rotateY(180deg);
+    }
+  }
+}

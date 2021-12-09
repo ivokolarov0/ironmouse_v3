@@ -8,6 +8,10 @@
     </div>
     <div class="neck-bell">
       <div class="neck-bell__inner"></div>
+      <div class="neck-bell__lip">
+        <div class="neck-bell__lip-inner"></div>
+      </div>
+      <div class="neck-bell__sides"></div>
     </div>
     <div class="neck-ribbon-holder">
       <div class="neck-ribbon">

@@ -13,7 +13,8 @@
     var(--bell-grad2) 100%
   );
   z-index: 3;
-  box-shadow: 0 0 0.8em 0.2em rgba(0, 0, 0, 0.2);
+  box-shadow: 0 0 0.8em 0.2em rgba(0, 0, 0, 0.2),
+    inset 0 0.8em 0.8em 0.1em rgba(0, 0, 0, 0.2);
 
   .neck-bell__inner {
     position: absolute;
@@ -45,5 +46,69 @@
       height: 0.6em;
       background-color: var(--neck);
     }
+  }
+}
+
+.neck-bell__lip {
+  position: absolute;
+  left: 0;
+  top: 1.5em;
+  width: 100%;
+  height: 2.3em;
+  overflow: hidden;
+
+  .neck-bell__lip-inner {
+    position: absolute;
+    top: 0;
+    left: 50%;
+    width: 10em;
+    height: 10em;
+    transform: translateX(-50%);
+    border-radius: 50%;
+    border-top: 0.2em solid var(--bell-border);
+
+    &:after {
+      content: '';
+      position: absolute;
+      top: 0.6em;
+      left: -5%;
+      width: 110%;
+      height: 110%;
+      border-radius: 50%;
+      border-top: 0.2em solid var(--bell-border);
+      box-shadow: inset 0 0.1em 0.2em 0.2em rgba(0, 0, 0, 0.2);
+    }
+  }
+}
+
+.neck-bell__sides {
+  position: absolute;
+  top: 2em;
+  left: 50%;
+  width: calc(100% + 2em);
+  height: 2em;
+  transform: translateX(-50%);
+
+  &:before,
+  &:after {
+    content: '';
+    position: absolute;
+    top: 0.8em;
+    width: 0.78em;
+    height: 0.78em;
+    border-radius: 50%;
+    z-index: 1;
+  }
+
+  &:before {
+    left: 0.7em;
+    border-left: 0.2em solid var(--bell-border);
+    box-shadow: inset 0.2em 0 0.2em -0.2em var(--bell-grad1);
+  }
+
+  &:after {
+    right: 0.7em;
+    box-shadow: inset -0.2em 0 0.2em -0.2em var(--bell-grad1);
+    border-right: 0.2em solid var(--bell-border);
   }
 }

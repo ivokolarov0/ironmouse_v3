@@ -8,6 +8,17 @@
   border-radius: 50%;
   overflow: hidden;
 
+  &:before {
+    content: '';
+    position: absolute;
+    top: 4em;
+    left: 50%;
+    width: 5em;
+    height: 3em;
+    transform: translateX(-50%);
+    box-shadow: 0 0.5em 0.7em 0 var(--neck);
+  }
+
   .collarbone__inner {
     position: absolute;
     left: 50%;
