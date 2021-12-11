@@ -8,6 +8,7 @@
       width: 14em;
       height: 21.8em;
       overflow: hidden;
+      z-index: 2;
 
       .hair-loop__inner {
         position: absolute;
@@ -42,6 +43,47 @@
         transform: rotate(70deg);
         box-shadow: inset -0.2em 1.3em 0 -0.2em var(--hair-shadow);
         border-top: 0.2em solid var(--hair-border);
+      }
+    }
+
+    &:nth-child(2) {
+      top: 6.8em;
+      left: 6em;
+      width: 9.2em;
+      height: 35em;
+      overflow: hidden;
+      transform: rotate(29deg);
+
+      .hair-loop__inner {
+        position: absolute;
+        width: 21.1em;
+        height: 37em;
+        border-radius: 50%;
+        border-left: 0.2em solid var(--hair-border);
+        box-shadow: inset 0.7em 0.4em 0 -0.2em var(--hair);
+        overflow: hidden;
+      }
+
+      .hair-loop__circle1-wrapper {
+        position: absolute;
+        top: 25em;
+        left: -0.2em;
+        width: 5.3em;
+        height: 10.7em;
+        transform: rotate(-8deg);
+        overflow: hidden;
+      }
+
+      .hair-loop__circle1 {
+        position: absolute;
+        top: -12.7em;
+        left: 2.1em;
+        width: 15em;
+        height: 23.4em;
+        border-radius: 50%;
+        transform: rotate(-20deg);
+        box-shadow: -2em 4em 0 2em var(--hair);
+        overflow: hidden;
       }
     }
   }
