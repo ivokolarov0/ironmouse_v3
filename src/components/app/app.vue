@@ -1,5 +1,6 @@
 <template>
   <div class="ironmouse">
+    <Hair />
     <Head />
     <div class="neck">
       <div class="neck__inner">
@@ -116,8 +117,19 @@ import SockPink from '../sock-pink/sock-pink.vue';
 import SockPurple from '../sock-purple/sock-purple.vue';
 import Tail from '../tail/tail.vue';
 import Head from '../head/head.vue';
+import Hair from '../hair/hair.vue';
 
 export default {
-  components: { boot, Leg, SockPurple, SockPink, Skirt, Chest, Tail, Head },
+  components: {
+    boot,
+    Leg,
+    SockPurple,
+    SockPink,
+    Skirt,
+    Chest,
+    Tail,
+    Head,
+    Hair,
+  },
 };
 </script>

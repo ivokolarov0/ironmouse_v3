@@ -1,6 +1,5 @@
 <template>
   <div class="head">
-    <hair />
     <div class="horns">
       <div class="horn-outer">
         <div class="horn">
@@ -28,8 +27,7 @@
 
 <script>
 import face from '../face/face.vue';
-import Hair from '../hair/hair.vue';
 export default {
-  components: { face, Hair },
+  components: { face },
 };
 </script>
