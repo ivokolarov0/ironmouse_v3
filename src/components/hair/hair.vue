@@ -21,11 +21,6 @@
           <div class="hair-part__inner"></div>
         </div>
       </div>
-      <div class="hair-parts2">
-        <div class="hair-part" v-for="(item, index) in 29" :key="index">
-          <div class="hair-part__inner"></div>
-        </div>
-      </div>
     </div>
     <div class="hair__side">
       <div class="hair-loops">
@@ -44,12 +39,6 @@
         </div>
       </div>
       <div class="hair-parts1">
-        <div class="hair-part" v-for="(item, index) in 29" :key="index">
-          <div class="hair-part__inner"></div>
-        </div>
-      </div>
-
-      <div class="hair-parts2">
         <div class="hair-part" v-for="(item, index) in 29" :key="index">
           <div class="hair-part__inner"></div>
         </div>

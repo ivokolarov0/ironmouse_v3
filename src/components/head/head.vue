@@ -22,12 +22,14 @@
     </div>
     <face class="face--left" />
     <face class="face--right" />
+    <hair-top />
   </div>
 </template>
 
 <script>
 import face from '../face/face.vue';
+import HairTop from '../hair-top/hair-top.vue';
 export default {
-  components: { face },
+  components: { face, HairTop },
 };
 </script>

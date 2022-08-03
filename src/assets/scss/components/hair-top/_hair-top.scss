@@ -1,0 +1,197 @@
+.hair-top {
+  position: absolute;
+  top: 0;
+  left: 0;
+  right: 0;
+  height: 125%;
+  z-index: 5;
+
+  .hair-part,
+  .hair-part__inner {
+    position: absolute;
+  }
+
+  .hair-part {
+    &:nth-child(1) {
+      top: 15em;
+      left: 53em;
+      width: 13em;
+      height: 31em;
+      background-color: var(--hair);
+      border-radius: 50%;
+      transform: rotate(25deg);
+    }
+
+    &:nth-child(2) {
+      top: 15em;
+      right: 53em;
+      width: 13em;
+      height: 30em;
+      background-color: var(--hair);
+      border-radius: 50%;
+      transform: rotate(-25deg);
+    }
+
+    &:nth-child(3) {
+      left: 64em;
+      top: 18em;
+      width: 34em;
+      height: 25em;
+      background-color: var(--hair);
+      transform: rotate(29deg);
+      border-radius: 50% 50% 50% 0;
+    }
+
+    &:nth-child(4) {
+      top: 2.3em;
+      right: 50%;
+      width: 9.2em;
+      height: 8.5em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        top: -1.5em;
+        right: -5.5em;
+        width: 12.2em;
+        height: 20em;
+        transform: rotate(-45deg);
+        border-radius: 50% 50% 0 0;
+        box-shadow: inset 0.4em 0.7em 0 2em var(--hair),
+          inset 0.4em 0.7em 0 2.2em var(--hair-border);
+        border-top: 0.2em solid var(--hair-border);
+        border-left: 0.2em solid var(--hair-border);
+      }
+    }
+
+    &:nth-child(5) {
+      top: 10.8em;
+      left: 66.7em;
+      width: 8.2em;
+      height: 8.5em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        bottom: 5.6em;
+        left: -0.8em;
+        width: 14em;
+        height: 13em;
+        border-radius: 50%;
+        border: 0.2em solid var(--hair-border);
+        box-shadow: inset 2.3em 1em 0 1em var(--hair),
+          inset 2.5em 1em 0 1em var(--hair-border);
+      }
+    }
+
+    &:nth-child(6) {
+      width: 9.2em;
+      height: 9em;
+      left: 50%;
+      top: 1.4em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        left: -0.4em;
+        width: 9.2em;
+        height: 8.4em;
+        border-radius: 50%;
+        border: 0.2em solid var(--hair-border);
+        box-shadow: inset -1em 1.2em 0 1.1em var(--hair),
+          inset -1em 1.2em 0 1.3em var(--hair-border);
+        border-bottom: 0;
+        border-left: 0;
+      }
+    }
+
+    &:nth-child(7) {
+      left: 52.5em;
+      top: 16em;
+      width: 11.6em;
+      height: 12.3em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        left: -2em;
+        width: 32em;
+        height: 55em;
+        border-radius: 50%;
+        border: 0.2em solid var(--hair-border);
+        background-color: var(--hair);
+      }
+    }
+
+    &:nth-child(8) {
+      left: 46.5em;
+      top: 28.1em;
+      width: 10em;
+      height: 14em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        top: -3.5em;
+        left: 1.2em;
+        width: 21em;
+        height: 59em;
+        background-color: var(--hair);
+        border: 0.2em solid var(--hair-border);
+        border-radius: 50%;
+      }
+    }
+
+    &:nth-child(9) {
+      left: 46.5em;
+      top: 42.1em;
+      width: 4em;
+      height: 10em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        top: -2em;
+        left: 0.3em;
+        width: 5em;
+        height: 20em;
+        border: 0.2em solid var(--hair-border);
+        border-radius: 50%;
+        transform: rotate(6deg);
+        box-shadow: inset 0.2em 0.8em 0 0.4em var(--hair),
+          inset 0.2em 0.8em 0 0.5em var(--hair-border);
+      }
+    }
+
+    &:nth-child(10) {
+      left: 46.5em;
+      top: 52em;
+      width: 4em;
+      height: 7.1em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        top: -4.6em;
+        left: 0.19em;
+        width: 11em;
+        height: 12.3em;
+        border-radius: 50%;
+        border: 0.2em solid var(--hair-border);
+        transform: rotate(-18deg);
+        box-shadow: inset 0.1em -0.5em 0 0.7em var(--hair),
+          inset 0.1em -0.5em 0 0.8em var(--hair-border);
+      }
+    }
+
+    &:nth-child(12) {
+      right: 52.5em;
+      top: 16em;
+      width: 11.6em;
+      height: 13em;
+      overflow: hidden;
+
+      .hair-part__inner {
+        right: -2em;
+        width: 32em;
+        height: 55em;
+        border-radius: 50%;
+        border: 0.2em solid var(--hair-border);
+        background-color: var(--hair);
+      }
+    }
+  }
+}
