@@ -1,24 +1,5 @@
-# ironmouse_v3
+### CSS only character
 
-## Project setup
-```
-yarn install
-```
+Character: https://virtualyoutuber.fandom.com/wiki/Ironmouse
 
-### Compiles and hot-reloads for development
-```
-yarn serve
-```
-
-### Compiles and minifies for production
-```
-yarn build
-```
-
-### Lints and fixes files
-```
-yarn lint
-```
-
-### Customize configuration
-See [Configuration Reference](https://cli.vuejs.org/config/).
+demo: https://ironmouse-v3-mu.vercel.app/
